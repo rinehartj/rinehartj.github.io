@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Hexacopter Drone
+description: 6 arms, 11.52kg motor thrust
+img: assets/img/hexacopter.jpg
 importance: 1
-category: work
-related_publications: true
+category: fun
+related_publications: false
 ---
 
 Every project has a beautiful feature showcase page.
