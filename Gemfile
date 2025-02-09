@@ -23,6 +23,8 @@ group :jekyll_plugins do
     gem 'jemoji'
 
     gem 'classifier-reborn'  # used for content categorization during the build
+
+    #gem 'jekyll-admin', group: :jekyll_plugins # Added by Jason
 end
 
 # Gems for development or external data fetching (outside :jekyll_plugins)
