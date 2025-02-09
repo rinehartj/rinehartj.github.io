@@ -7,30 +7,34 @@ importance: 1
 category: fun
 related_publications: false
 ---
-Hello There
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This self-built drone is meant to lift heavy payloads like a DSLR camera or delivery parcel. With six arms, it is capible of a surviving a single motor faulure.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+# Specifications
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Body
 
+| **Body Kit**        | Tarot 680 Pro              |
+| **Arms**            | Six (6)                    |
+| **Materials**       | Carbon Fiber, Aluminum     |
+
+
+### Motors and ESCs
+
+| **Motor Type**      | Brushless                  |
+| **Max Thrust**      | 1920 g per motor           |
+| **KV Rating**       | --- KV                     |
+| **ESC**             | 40A max continuous         |
+    
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/drone_top.jpg" title="Top of drone" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/drone_bottom.jpg" title="Bottom of drone" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/drone_arm.jpg" title="arm of drone" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
