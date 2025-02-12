@@ -28,13 +28,13 @@ This self-built drone is meant to lift heavy payloads like a DSLR camera or deli
     
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/drone_top.jpg" title="Top of drone" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/hexacopter/drone_top.jpg" title="Top of drone" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/drone_bottom.jpg" title="Bottom of drone" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/hexacopter/drone_bottom.jpg" title="Bottom of drone" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/drone_arm.jpg" title="arm of drone" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/hexacopter/drone_arm.jpg" title="arm of drone" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
