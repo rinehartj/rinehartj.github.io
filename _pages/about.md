@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hello! My name is Jason Rinehart and I possess a diverse history in sensors, microcontrollers, and programming.I hold a Bachelor of Science in Electrical Engineering from Wentworth Institute of Technology. 
+Hello! My name is Jason Rinehart and I am currently seeking full-time work opportunities. I possess a diverse history in sensors, microcontrollers, and programming. I hold a Bachelor of Science in Electrical Engineering from Wentworth Institute of Technology.
 
 ### Two words to describe my ideal job:
 - **portable**: I would be on my feet to carry out the majority of my responsibilities, either in a lab or in the field.
