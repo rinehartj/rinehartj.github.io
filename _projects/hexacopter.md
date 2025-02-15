@@ -14,18 +14,18 @@ This self-built drone is meant to lift heavy payloads like a DSLR camera or deli
 
 ### Body
 
-| **Body Kit**        | Tarot 680 Pro              |
-| **Arms**            | Six (6)                    |
-| **Materials**       | Carbon Fiber, Aluminum     |
+| **Body Kit** | Tarot 680 Pro |
+| **Arms** | Six (6) |
+| **Materials** | Carbon Fiber, Aluminum |
 
 
 ### Motors and ESCs
 
-| **Motor Type**      | Brushless                  |
-| **Max Thrust**      | 1920 g per motor           |
-| **KV Rating**       | --- KV                     |
-| **ESC**             | 40A max continuous         |
-    
+| **Motor Type** | Brushless |
+| **Max Thrust** | 1920 g per motor |
+| **KV Rating** | --- KV |
+| **ESC** | 40A max continuous |
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/hexacopter/drone_top.jpg" title="Top of drone" class="img-fluid rounded z-depth-1" %}
