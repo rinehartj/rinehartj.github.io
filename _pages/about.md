@@ -19,5 +19,6 @@ social: true # includes social icons at the bottom of the page
 Hello! My name is Jason Rinehart and I am currently seeking full-time work opportunities. I possess a diverse history in sensors, microcontrollers, and programming. I hold a Bachelor of Science in Electrical Engineering from Wentworth Institute of Technology.
 
 ### Two words to describe my ideal job:
+
 - **portable**: I would love to work in a fast-paced environment, especially in a lab or the field where I would be on my feet.
 - **pliable**: I best work when every day entails something new. I seek a role where my responsibilities may change when project guidelines are reviewed and refined.
