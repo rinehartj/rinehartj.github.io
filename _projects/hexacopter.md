@@ -8,7 +8,7 @@ category: fun
 related_publications: false
 ---
 
-This self-built drone is meant to lift heavy payloads like a DSLR camera or delivery parcel. With six arms, it is capible of a surviving a single motor faulure.
+This self-built drone is meant to lift heavy payloads like a DSLR camera or delivery parcel. With six arms, it is capable of a surviving a single motor failure.
 
 # Specifications
 
@@ -17,7 +17,6 @@ This self-built drone is meant to lift heavy payloads like a DSLR camera or deli
 | **Body Kit** | Tarot 680 Pro |
 | **Arms** | Six (6) |
 | **Materials** | Carbon Fiber, Aluminum |
-
 
 ### Motors and ESCs
 
