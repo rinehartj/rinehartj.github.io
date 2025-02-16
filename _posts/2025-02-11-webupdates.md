@@ -4,7 +4,7 @@ title: "Website Updates"
 #date: 2019-01-01
 ---
 
-2/10/2025: *Added drafts folder for work-in-progress posts*. For Jekyll to handle drafts properly, two changes were necessary. First, I created a `_drafts` folder in the root directory. Second, I added this line to `docker-compose.yml`:
+2/10/2025: _Added drafts folder for work-in-progress posts_. For Jekyll to handle drafts properly, two changes were necessary. First, I created a `_drafts` folder in the root directory. Second, I added this line to `docker-compose.yml`:
 
 ```sh
 command: bundle exec jekyll serve --host 0.0.0.0 --port 8080 --livereload --drafts --watch --force_polling --verbose --incremental
