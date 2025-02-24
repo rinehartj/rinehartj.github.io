@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-website-updates",
+        },{id: "post-raspberry-pi-pico-as-a-hardware-isp",
+      
+        title: "Raspberry Pi Pico as a hardware ISP",
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/hardwareISP/";
+        
+      },
+    },{id: "post-website-updates",
       
         title: "Website Updates",
       
