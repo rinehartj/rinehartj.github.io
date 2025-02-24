@@ -42,6 +42,11 @@ repo_trophies:
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
 rss_icon: true
+title: >
+  Jason Rinehart Portfolio
+description: >
+  A collection of projects and blog posts about electronics and computers.
+
 
 # -----------------------------------------------------------------------------
 # Layout
