@@ -20,5 +20,5 @@ Hello! My name is Jason Rinehart and I am currently seeking full-time work oppor
 
 ### Two words to describe my ideal job:
 
-- **portable**: I would love to work in a fast-paced environment, especially in a lab or the field where I would be on my feet.
-- **pliable**: I best work when every day entails something new. I seek a role where my responsibilities may change when project guidelines are reviewed and refined.
+- **Lively**: I would love to work in a fast-paced environment, especially in a lab or the field where I would be on my feet.
+- **Dynamic**: I best work when every day entails something new. I seek a role where my responsibilities may change when project guidelines are reviewed and refined.
