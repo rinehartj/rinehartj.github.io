@@ -3,7 +3,7 @@ layout: distill
 title: "Raspberry Pi Pico as a hardware ISP"
 tags: hardware, firmware
 thumbnail: assets/img/hardwareISP/isp.jpg
-bibliography: 2025-02-17-hardwareISP.bib
+bibliography: 2025-02-23-hardwareISP.bib
 date: 2025-02-23
 ---
 
@@ -62,7 +62,7 @@ According to the datasheet, the maximum safe DIO voltage of the RP2040 is `IOVDD
 
 When all was finished, the file structure of the Pi Pico root directory looked like this:
 
-<div class="col-sm mt-3 mt-md-0 w-50">
+<div class="col-sm-5 mt-3 mt-md-0 mx-auto">
     {% include figure.liquid loading="eager" path="/assets/img/hardwareISP/filesystem.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
