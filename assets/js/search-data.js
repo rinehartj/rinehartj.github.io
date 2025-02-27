@@ -74,8 +74,8 @@ ninja.data = [{
           description: "A custom LED controller for off-the-shelf LED strips.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/lightshow/";
-            },},{id: "projects-in-ear-pulse-oximeter",
-          title: 'In-Ear Pulse Oximeter',
+            },},{id: "projects-in-ear-wearable-for-blood-oxygen-saturation-monitoring",
+          title: 'In-ear Wearable for Blood Oxygen Saturation Monitoring',
           description: "Helps doctors gather data from people with sleep apnea and COPD.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/oximeter/";
