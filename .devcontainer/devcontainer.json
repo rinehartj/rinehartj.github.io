@@ -16,7 +16,8 @@
   },
 
   // Optionally: run jekyll serve automatically on container entering using the Docker entrypoint
-  "postAttachCommand": "./bin/entry_point.sh",
+  // "postAttachCommand": "./bin/entry_point.sh",
+  "postAttachCommand": "bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling", // Modified by Jason
 
   "customizations": {
     "vscode": {
