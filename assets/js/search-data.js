@@ -30,18 +30,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "dropdown-3d-portfolio",
-              title: "3D portfolio",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "";
-              },
-            },{id: "post-raspberry-pi-pico-as-a-hardware-isp",
+        },{id: "nav-3d-portfolio",
+          title: "3D portfolio",
+          description: "A portfolio of my 3D models.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/3Dportfolio/";
+          },
+        },{id: "post-fixing-an-air-purifier-with-an-obstructed-pm-sensor",
+      
+        title: "Fixing an air purifier with an obstructed PM sensor",
+      
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/airPurifier/";
+        
+      },
+    },{id: "post-raspberry-pi-pico-as-a-hardware-isp",
       
         title: "Raspberry Pi Pico as a hardware ISP",
       
-      description: "",
+      description: "Created on February 23, 2025",
       section: "Posts",
       handler: () => {
         
