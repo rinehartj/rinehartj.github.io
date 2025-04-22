@@ -1,6 +1,7 @@
 ---
 layout: distill
 title: "Raspberry Pi Pico as a hardware ISP"
+description: "Created on February 23, 2025"
 tags: hardware, firmware
 thumbnail: assets/img/hardwareISP/isp.jpg
 bibliography: 2025-02-23-hardwareISP.bib
@@ -11,7 +12,7 @@ date: 2025-02-23
     {% include figure.liquid loading="eager" path="assets/img/hardwareISP/isp.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
-#### This project began when I was looking for proof that my Arduino Nano could be brought back to life.
+> This project began when I was looking for proof that my Arduino Nano could be brought back to life.
 
 ## Introduction
 
@@ -53,6 +54,10 @@ However, this process seemed to have wiped the bootloader from my Arduino Nano, 
 To flash an ATMega chip with a corrupted or erased bootloader such as mine, an **In-System Programmer** (ISP) is needed. The easiest path forward would be to use _another Arduino_ since both devices would operate at the same logic level (5V). I had none on hand so I chose to use a Raspberry Pi Pico which operates at 3.3V. I needed to be careful that logic levels would not saturate.
 
 According to the datasheet, the maximum safe DIO voltage of the RP2040 is `IOVDD + 0.5V`. I measured the IOVDD pin using a multimeter and found it to be 3.27V, so in my case, the maximum safe DIO voltage was 3.77V. It was possible that level shifters were not needed between the Arduino Nano and Pi Pico, as long as the Arduino Nano could operate at 3.77V reliably.
+
+<div class="col-sm-8 mt-3 mt-md-0 mx-auto">
+    {% include figure.liquid loading="eager" path="/assets/img/hardwareISP/RP2040Maximums.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+</div>
 
 ### Flashing Steps
 

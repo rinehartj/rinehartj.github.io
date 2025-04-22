@@ -3,7 +3,7 @@ layout: page
 permalink: /3Dportfolio/
 title: 3D portfolio
 description: A portfolio of my 3D models.
-nav: false
+nav: true
 nav_order: 4
 ---
 
