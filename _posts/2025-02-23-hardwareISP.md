@@ -40,8 +40,8 @@ Finally, I made sure to use a USB cable that supported **data and power** (as op
 
 <div class="row mt-3">
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="/assets/img/hardwareISP/MarlinOldFirmware.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-        {% include figure.liquid loading="eager" path="/assets/img/hardwareISP/MarlinNewFirmware.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="/assets/img/hardwareISP/MarlinOldFirmware.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="/assets/img/hardwareISP/MarlinNewFirmware.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm-8 mt-3 mt-md-0">
         Earlier this year, I updated the firmware for my Ender 3 Pro 3D printer to access a new feature called "Z-Babystep". However, on older Ender 3 Pro versions using the 8-bit "Melzi" motherboard, bootloaders were sometimes not included from the factory, including mine. I flashed a bootloader myself using <a href="https://letsprint3d.net/guide-how-to-flash-a-bootloader-on-melzi-boards/">this online guide</a>. After wiring the SPI headers of my Arduino Nano and Melzi motherboard together, I uploaded the "Arduino as ISP" sketch to the Nano using Arduino IDE. Then, I set "Board" to "Sanguino" and used the "Burn Bootloader" function. At this point, I was able to upload Marlin firmware without issue.

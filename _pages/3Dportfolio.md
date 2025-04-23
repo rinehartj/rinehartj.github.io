@@ -7,4 +7,6 @@ nav: true
 nav_order: 4
 ---
 
+> Mobile Viewers: Click "View PDF"
+
 {% pdf "/assets/pdf/3DPortfolio.pdf" %}
