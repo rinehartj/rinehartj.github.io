@@ -64,13 +64,13 @@ The objective of our project is to develop and test modules that would be suitab
 
 <div class="row mt-3">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/oximeter/wiring_diagram.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="lazy" path="assets/img/oximeter/wiring_diagram.png" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Figure 1 Wiring diagram for the hardware setup.
         </div>
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/oximeter/blockdiagram_hardwaresetup.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="lazy" path="assets/img/oximeter/blockdiagram_hardwaresetup.png" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Figure 2 Block diagram of the hardware setup.
         </div>
@@ -95,7 +95,7 @@ R = \frac{AC_{\text{red}} / DC_{\text{red}}}{AC_{\text{infrared}} / DC_{\text{in
 \end{equation}
 <!-- prettier-ignore-end -->
 
-{% include figure.liquid loading="eager" path="assets/img/oximeter/simulink_blockdiagram.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="lazy" path="assets/img/oximeter/simulink_blockdiagram.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 <div class="caption">
     Figure 3 Simulink simulation of pulse oximeter using MAX30101 PPG.
@@ -114,7 +114,7 @@ With the AC and DC components determined, the ratio of ratios could be calculate
 
 ## Testing and Results
 
-{% include figure.liquid loading="eager" path="assets/img/oximeter/holdbreath_demo.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="lazy" path="assets/img/oximeter/holdbreath_demo.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 <div class="caption">
     Figure 4 Comparison of experimental simulation versus off-the-shelf oximeter.
@@ -126,7 +126,7 @@ With the AC and DC components determined, the ratio of ratios could be calculate
 
 <div class="row mt-3 mb-3">
     <div class="col-sm-6 mx-auto">
-        {% include figure.liquid loading="eager" path="assets/img/oximeter/experimental_setup.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="lazy" path="assets/img/oximeter/experimental_setup.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Figure 5 Test setup consisting of off-the-shelf oximeter and experimental system.
         </div>
@@ -151,19 +151,19 @@ These results with the Sparkfun MAX30101 and developed software appear promising
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/oximeter/sch1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="lazy" path="assets/img/oximeter/sch1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Figure 6 Sensor
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/oximeter/sch2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="lazy" path="assets/img/oximeter/sch2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Figure 7 DC-DC converter
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/oximeter/sch3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="lazy" path="assets/img/oximeter/sch3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Figure 8 Voltage regulation
         </div>
@@ -171,19 +171,19 @@ These results with the Sparkfun MAX30101 and developed software appear promising
 </div>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/oximeter/sch4.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="lazy" path="assets/img/oximeter/sch4.png" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Figure 9 Logic conversion
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/oximeter/sch5.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="lazy" path="assets/img/oximeter/sch5.png" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Figure 10 Connector
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/oximeter/sch6.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="lazy" path="assets/img/oximeter/sch6.png" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Figure 11 Pull-up resistor
         </div>
@@ -194,7 +194,7 @@ A PCB was designed using Altium Designer (La Jolla, CA, U.S.), a software chosen
 
 Next, the PCB layout file was created, where all components were placed on the board. This file contained the precise location of every physical element in the PCB assembly. To facilitate connections between all components, the design incorporated four layers, with the bottom layer serving as the ground connection. This approach not only facilitated routing but also the placement of vias.
 
-{% include figure.liquid path="assets/img/oximeter/pcb_layout.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="lazy" path="assets/img/oximeter/pcb_layout.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 <div class="caption">
     Figure 12 2D PCB Layout
@@ -208,10 +208,10 @@ A 3D model was developed to explore a potentially marketable product. Worn like 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/oximeter/render_main.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="lazy" path="assets/img/oximeter/render_main.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/oximeter/render_alt.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="lazy" path="assets/img/oximeter/render_alt.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">

@@ -28,3 +28,7 @@ Hello! I am an early-career Electrical Engineer currently in search of my next f
 <br>
 
 ---
+
+> "Success is not in short supply. It isn't rationed... (and you stepped up to the window and it was all gone...) No. No. No! It's like an ocean here!" - Jim Rohn, _The Challenge to Succeed_, 1981.
+
+---
