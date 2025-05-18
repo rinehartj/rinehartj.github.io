@@ -131,7 +131,7 @@ Code done running.
 
 ## Conclusion
 
-According to [this reddit post](https://www.reddit.com/r/arduino/comments/10o64v2/comment/j6g53h1/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button), new Nano clones are being shipped with the new bootloader. This procedure would likely work for anyone who would like to update their Nano bootloader if they had an old board. Considering the inexpensive price tag of the Arduino Nano compared to other microcontroller boards, I suspect most people with corrupted bootloaders would opt for a replacement. I am glad I chose the more challenging path of flashing a bootloader which extended the life of my trusty Arduino.
+According to [this reddit post](https://www.reddit.com/r/arduino/comments/10o64v2/comment/j6g53h1/), new Nano clones are being shipped with the new bootloader. This procedure would likely work for anyone who would like to update their Nano bootloader if they had an old board. Considering the inexpensive price tag of the Arduino Nano compared to other microcontroller boards, I suspect most people with corrupted bootloaders would opt for a replacement. I am glad I chose the more challenging path of flashing a bootloader which extended the life of my trusty Arduino.
 
 {::comment}
 
