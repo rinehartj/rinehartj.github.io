@@ -38,39 +38,55 @@ ninja.data = [{
             window.location.href = "/3Dportfolio/";
           },
         },{id: "post-fixing-an-air-purifier-with-an-obstructed-pm-sensor",
-      
-        title: "Fixing an air purifier with an obstructed PM sensor",
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
         
-          window.location.href = "/blog/2025/airPurifier/";
+          title: "Fixing an air purifier with an obstructed PM sensor",
         
-      },
-    },{id: "post-raspberry-pi-pico-as-a-hardware-isp",
-      
-        title: "Raspberry Pi Pico as a hardware ISP",
-      
-      description: "Created on February 23, 2025",
-      section: "Posts",
-      handler: () => {
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/airPurifier/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
-          window.location.href = "/blog/2025/hardwareISP/";
+          title: "a post with plotly.js",
         
-      },
-    },{id: "post-website-updates",
-      
-        title: "Website Updates",
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
+        description: "this is what included plotly.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/plotly/";
+          
+        },
+      },{id: "post-raspberry-pi-pico-as-a-hardware-isp",
         
-          window.location.href = "/blog/2025/webupdates/";
+          title: "Raspberry Pi Pico as a hardware ISP",
         
-      },
-    },{id: "projects-custom-built-computer",
+        description: "Created on February 23, 2025",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/hardwareISP/";
+          
+        },
+      },{id: "post-website-updates",
+        
+          title: "Website Updates",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/webupdates/";
+          
+        },
+      },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather/";
+            },},{id: "projects-custom-built-computer",
           title: 'Custom-Built Computer',
           description: "Allowed smooth handling of resource-intense applications.",
           section: "Projects",handler: () => {
