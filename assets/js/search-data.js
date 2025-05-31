@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/3Dportfolio/";
           },
-        },{id: "post-fixing-an-air-purifier-with-an-obstructed-pm-sensor",
+        },{id: "post-how-to-install-dell-1100-print-drivers-on-windows-11",
+        
+          title: "How to install Dell 1100 Print Drivers on Windows 11",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/dell1100win11/";
+          
+        },
+      },{id: "post-fixing-an-air-purifier-with-an-obstructed-pm-sensor",
         
           title: "Fixing an air purifier with an obstructed PM sensor",
         
