@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Early-career Electrical Engineer
+subtitle: Hardware Engineer at Westinghouse Electric Company
 
 profile:
   align: right
@@ -16,14 +16,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hello! I am an early-career Electrical Engineer currently in search of my next full-time engineering position in and around the **Avon, CT and Boston, MA** areas, and am open to travel. I have **2 years** of professional experience in oil&gas and aerospace where I have **demonstrated experience** working in cross-functional teams. I hold a **Bachelor of Science in Electrical Engineering**.
+**Try to envision** a curious, energetic kid who disassembles all the broken household appliances he can get his hands on—computers, air fryers, and the like. At first he was rarely able to put them back together in one piece due to their complexity and need for strategic tool usage. However, through many successes and failures, his competency with technology matured and he was able to make successful repairs for family and friends.
 
-**Welcome to my portfolio website!** You can find here projects, blog posts, research papers, and more.
-
-### Two words to describe my ideal job:
-
-- **Lively**: Fast-pased environment
-- **Dynamic**: Every day is different
+Even though he began working with electronics and programming at a young age, it took years for him to apply those skills in a meaningful way. He would go on to develop a passion for engineering modeling and design, and make novel designs in the home security and medical devices sectors. **That kid is me, and this is my portfolio.** Welcome!
 
 > "Success is not in short supply. It isn't rationed... (and you stepped up to the window and it was all gone...) No. No. No! It's like an ocean here!" - Jim Rohn, _The Challenge to Succeed_, 1981.
 
