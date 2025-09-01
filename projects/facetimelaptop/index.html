@@ -1,0 +1,230 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Automated FaceTime Pickup System | Jason Rinehart's Portfolio </title> <meta name="author" content="Jason R. Rinehart"> <meta name="description" content="A one-button solution to launching a FaceTime call, ideal for seniors."> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?b05f9a0b7405d7c8c89c7465593dea81"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?dadeb9c5d1fd12bc8d37475657446863"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%93%95&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://rinehartj.github.io/projects/facetimelaptop/"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Jason Rinehart's Portfolio </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/3Dportfolio/">3D portfolio </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Automated FaceTime Pickup System</h1> <p class="post-description">A one-button solution to launching a FaceTime call, ideal for seniors.</p> </header> <article> <div class="col-sm mt-3 mt-md-0"> <figure> <video src="/assets/video/facetimelaptop.mp4" class="img-fluid rounded z-depth-1" width="auto" height="auto" autoplay="" controls=""></video> </figure> </div> <div class="caption"> Video demonstration of a laptop placing an automated FaceTime call. </div> <blockquote> <p>tl;dr: <strong>What is it?</strong> A customized Ubuntu Server installation for easily placing FaceTime calls. This system has been installed autonomously using cloud-init, an automated Linux setup tool, and tested using Hyper-V, a Windows virtualization tool.</p> </blockquote> <p>This project was created as a solution to help my family communicate with each other more effectively while away from one another. Implemented on a Macbook Air (Intel CPU) laptop running the Ubuntu Server operating system, this highly customized computer only requires a <strong>single push of the power button to launch a video call</strong>. For context, one would typically need the following to place a video call:</p> <ul> <li>A <strong>phone/laptop/computer</strong> set up with a local or an online/vendor account (e.g. Microsoft, iCloud) and connected to the internet</li> <li>An <strong>email</strong> to create an <strong>account</strong> with a video calling platform (e.g. Zoom, iCloud)</li> </ul> <p>In addition to these one-time hurtles, the user would then need to sign in and maintain up-to-date software on their device. They would need to navigate to their video calling platform <em>every time</em> they want to make a call. The <em>Automated FaceTime Pickup System</em> consists of an off-the-shelf computer and customized Linux installation to allow the user to press <strong>a single button</strong> to launch a call—the power button.</p> <p><br></p> <div class="col-sm-8 mt-3 mt-md-0 mx-auto"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/facetimelaptop/FaceTime_Macbook_Air-480.webp 480w,/assets/img/facetimelaptop/FaceTime_Macbook_Air-800.webp 800w,/assets/img/facetimelaptop/FaceTime_Macbook_Air-1400.webp 1400w,/assets/img/facetimelaptop/FaceTime_Macbook_Air-2400.webp 2400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/facetimelaptop/FaceTime_Macbook_Air.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> </div> <div class="caption"> The destination of a FaceTime join link. In this project, we automate the process of opening this link, entering our name, pressing "Continue", and maximizing the browser. </div> <p><br></p> <p>Below is a block diagram of the steps the laptop takes to place a FaceTime call:</p> <pre><code class="language-mermaid">flowchart TB
+    A[User presses power button]
+    B[Computer boots to local install of Ubuntu Server]
+    C[Automatic login to operating system]
+    D[Web browser launches immediately and navigates to pre-generated FaceTime link]
+    E[Browser automatically interacts with web page to join the call and fullscreen window]
+    F[Recipient receives push notification on their iPhone to join the call]
+    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F
+</code></pre> <h2 id="development">Development</h2> <p>This project is built on Apple FaceTime and the fact that FaceTime offers iOS users the ability generate invitation links that don’t require authentication. A family member or friend could join your video call <strong>without an Apple device</strong> such as a Windows computer or even Raspberry Pi single board computer. All the person would need to do is open the URL, type a first name, and click “Join Call”. If it’s this easy to use FaceTime, why not automate this process? 😄</p> <div class="col-sm-6 mt-3 mt-md-0 mx-auto"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/facetimelaptop/FaceTimeLink-480.webp 480w,/assets/img/facetimelaptop/FaceTimeLink-800.webp 800w,/assets/img/facetimelaptop/FaceTimeLink-1400.webp 1400w,/assets/img/facetimelaptop/FaceTimeLink-2400.webp 2400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/facetimelaptop/FaceTimeLink.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> </div> <div class="caption"> iOS users can generate links to join calls—we automate the process of joining the call. </div> <ol> <li> <p><strong>Develop core program</strong>: I first researched methods of browser navigation using code and found two open source programs: Puppeteer and Playwright. Both tools can use Javascript to interface with them, but I choose Puppeteer because people on the internet said it was simple to use. My goal was to get a basic program working as fast as possible, so I wrote a preliminary program in the NodeJS language and ran it on a Raspberry Pi 3 B+. After several code iterations, I got the program to open Chromium browser to a specified FaceTime link, enter a username, press the “Join” button, and maximize the browser. I created a GitHub repository of my code at this point so I could clone it onto a different computer if need be, while maintaining version control.</p> </li> <li> <p><strong>Find suitable hardware</strong>: The performance of the Raspberry Pi 3 B+ was found to be inadequate for hosting a bidirectional video call at 1080p resolution. Video would cut out periodically for no apparent reason. I tried using the RPi-optimized browser package <code class="language-plaintext highlighter-rouge">chromium-browser</code>, overclocking and extra cooling, allocating more memory from RAM to VRAM…all with partial but not full success. I then moved the project to a ~2013 budget-tier Acer computer with an AMD chip. Since Raspberry Pi OS—the operating system that runs on the Pi—was no longer applicable, I decided the operating system would then be Ubuntu Server. This operating system is known to be light weight out of the box compared to a full Ubuntu Desktop install.<br><br>I was looking for a fast way to replicate the system should the laptop fail, and also wanted to keep track of which commands I was using to configure the system. I found <strong>cloud-init</strong> was made for this very purpose—to easily instantiate new Ubuntu Server instances onto one or several machines. I developed a reusable <strong>cloud-init configuration</strong> to install the operating system, update packages, and install custom software onto a laptop with no user interaction. It was fun to see the laptop working by itself!<br><br>Ultimately the Acer laptop was also inadequate due to seemingly random lag spikes. I had been experimenting with installing Linux on a Macbook Air that had an Intel CPU and I thought it would be the perfect candidate for the Automated FaceTime Pickup System. Through the power of cloud-init, I was able to get my system running on this machine in minutes.</p> </li> <li> <p><strong>Hyper-V Virtual Machine Development</strong>: During the entire development process of the cloud-init configuration, I used <strong>Hyper-V</strong> to quickly test my <code class="language-plaintext highlighter-rouge">.yaml</code> file—that I also refer to as “cloud-init configuration”—which is the set of instructions that cloud-init reads during the Ubuntu Server installation process. This file contains all of the commands to run after first boot. I made <strong>a lot</strong> of iterations in Hyper-V to make sure the instructions had valid syntax and actually did something. Often, I had to repair broken commands and adjust cloud-init formatting. I also frequently needed to make sure everything worked before moving to a new phase of development. In total, I estimate having restarted my virtual machine a hundred times, but in the end, I was left with a set of instructions I could trust cloud-init to read.</p> </li> <li> <p><strong>Deploy Final System</strong>: After the Ubuntu Server cloud-init configuration had been brought to an acceptable state for deployment, I flashed the final version of the cloud-init configuration <code class="language-plaintext highlighter-rouge">.iso</code> file onto an SD card (since this Macbook Air has an SD card slot). I also flashed a factory image of Ubuntu Server onto a flash drive. Along with a USB WiFi adapter and additional flash drive containing packages needed for WiFi functionality on Ubuntu Server, I completed the install and tested the final system to be working.</p> </li> </ol> <h2 id="hickups-along-the-way">Hickups Along The Way</h2> <ul> <li> <p><strong>WiFi troubles</strong>: I couldn’t get WiFi to work on Ubuntu Server for the longest time. Some people on YouTube claimed it was possible without installing any packages; others claimed it was too difficult and that Ubuntu Desktop is easier. I even got WiFi to work in the Ubuntu Server live installer but WiFi didn’t work in the deployed system… why would that be? After much experimenting and debugging, I found that manually installing the <code class="language-plaintext highlighter-rouge">wpa_supplicant</code> package and its dependencies was absolutely necessary for WiFi to work on Ubuntu Server 24.04.2LTS.</p> </li> <li> <p><strong><code class="language-plaintext highlighter-rouge">late_commands</code> versus <code class="language-plaintext highlighter-rouge">runcmd</code> in cloud-init</strong>: As it turns out, when making a cloud-init configuration, there are many points during an Ubuntu installation when commands can be run. For example, commands can be run both before and after the user account(s) are set up. It was important to consider that in the <code class="language-plaintext highlighter-rouge">late_commands</code> section, no user yet exists, and that it’s the root user of the <em>installer</em> actually running the command. However, in the <code class="language-plaintext highlighter-rouge">runcmd</code> section, it’s the newly created user (configured in the <code class="language-plaintext highlighter-rouge">user-data</code> section of the cloud-init configuration) that runs the command. This is extremely important to know as some commands like <code class="language-plaintext highlighter-rouge">git clone</code> need to be ran as the newly created user for the folder to end up in the right directory. I choose to move nearly all my commands from <code class="language-plaintext highlighter-rouge">late_commands</code> to <code class="language-plaintext highlighter-rouge">runcmd</code> to avoid these complications. The only commands remaining in <code class="language-plaintext highlighter-rouge">late_commands</code> were WiFi configuration related (that could be run as any user), as many commands in <code class="language-plaintext highlighter-rouge">runcmd</code> require WiFi.</p> </li> </ul> <hr> <p><br></p> <h2 id="flowchart-of-ubuntu-server-installation-using-cloud-init">Flowchart of Ubuntu Server installation using cloud-init</h2> <pre><code class="language-mermaid">---
+title: Custom Ubuntu Server cloud-init Setup
+---
+
+flowchart TD
+    subgraph AutoInstall["Base Installation: Set up SSH server and users"]
+        direction TB
+        A1["Enable SSH server
+            (public key authentication only)"]
+        A2["Disable root user"]
+        A3["Create user 'jason' (sudo, ssh key auth)"]
+    end
+
+    subgraph LateCommands["late-commands: Run custom commands immediately after base installation"]
+        direction LR
+        L1["Write /target/etc/netplan/90-netcfg.yaml (WiFi config)"]
+        L2["Generate and apply Netplan"]
+        L1 --&gt; L2
+    end
+
+    subgraph RunCmd["runcmd: Run custom commands as the newly created user"]
+        direction TB
+        subgraph WiFiConfig["Configure onboard WiFi (optional)"]
+            RC4["Install bcmwl-kernel-source (proprietary driver for MacBook Wifi adapter)"]
+            RC5["Update netplan adapter names"]
+        end
+
+        subgraph Packages["Configure packages"]
+            direction LR
+            RC3["apt update &amp;&amp; apt upgrade -y"]
+            RC6["Install packages
+            (xfce4, xdotool, git, nodejs, etc.)"]
+            RC7["Remove light-locker"]
+            RC3 --&gt; RC6 --&gt; RC7
+        end
+
+        subgraph AutoLogin["Configure autologin"]
+            direction TB
+            RC8["Write /etc/lightdm/lightdm.conf"]
+            RC9["Write /home/jason/.xprofile"]
+            RC10["chmod +x /home/jason/.xprofile"]
+            RC11["chown jason:jason .xprofile"]
+            RC8 --&gt; RC9 --&gt; RC10 --&gt; RC11
+        end
+
+        subgraph RemoteFaceTimePickup["Setup RemoteFaceTimePickup"]
+            direction TB
+            RC12["npm install puppeteer (as jason)"]
+            RC13["git clone RemoteFaceTimePickup"]
+            RC14["chmod +x keyboard_grabber.py"]
+            RC15["Add keyboard_grabber.desktop to autostart"]
+            RC16["chown autostart dir to jason"]
+            RC12 --&gt; RC13 --&gt; RC14 --&gt; RC15 --&gt; RC16
+        end
+
+        WiFiConfig --&gt; Packages --&gt; AutoLogin --&gt; RemoteFaceTimePickup
+
+    end
+
+    subgraph Power["Power State"]
+        P1["Reboot after setup"]
+    end
+
+    subgraph Boot["First Normal Boot"]
+        direction LR
+        B1["System boots with autologin to XFCE desktop"]
+        B2["keyboard_grabber.py autostart runs"]
+        B3["index.cjs executes"]
+    end
+
+    subgraph Manual["Manual Commands"]
+        direction LR
+        M1["Install CloudFlare Reverse SSH Tunnel"]
+    end
+
+    %% Flow
+    AutoInstall --&gt; LateCommands --&gt; RunCmd --&gt; Power --&gt; Boot --&gt; Manual
+</code></pre> <h2 id="full-cloud-init-configuration-code">Full cloud-init configuration code</h2> <details><summary>Click to expand</summary> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#cloud-config</span>
+<span class="na">autoinstall</span><span class="pi">:</span> <span class="c1"># need this line to skip installer! also, above comment is required too.</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="m">1</span>
+  <span class="na">ssh</span><span class="pi">:</span>
+    <span class="na">install-server</span><span class="pi">:</span> <span class="kc">true</span>
+    <span class="na">allow-pw</span><span class="pi">:</span> <span class="kc">false</span>
+  <span class="na">user-data</span><span class="pi">:</span>
+    <span class="na">disable_root</span><span class="pi">:</span> <span class="kc">true</span>
+    <span class="na">users</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">jason</span>
+        <span class="na">groups</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">sudo</span><span class="pi">]</span>
+        <span class="na">shell</span><span class="pi">:</span> <span class="s">/bin/bash</span>
+        <span class="na">lock_passwd</span><span class="pi">:</span> <span class="kc">false</span>
+        <span class="na">passwd</span><span class="pi">:</span> <span class="s">$6$cKkt...</span>
+        <span class="na">ssh_authorized_keys</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">ssh-rsa AAAAB3NzaC1y...</span>
+        <span class="na">sudo</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">ALL=(ALL)</span><span class="nv"> </span><span class="s">NOPASSWD:ALL"</span><span class="pi">]</span> <span class="c1"># Allows "sudo" to be ran without entering password.</span>
+    <span class="na">runcmd</span><span class="pi">:</span>
+      <span class="c1"># THIS SECTION NOT NEEDED IF INSTALLING FROM USB ETHERNET ADAPTER</span>
+      <span class="c1"># Mount USB drive containing wpa_supplicant package which is needed to connect to WiFi when running Ubuntu Server.</span>
+      <span class="pi">-</span> <span class="s">mkdir /mnt/usb</span>
+      <span class="pi">-</span> <span class="s">echo "Insert USB drive containing wpa_supplicant .deb file. You have 15 seconds to do this."</span>
+      <span class="pi">-</span> <span class="s">sleep </span><span class="m">15</span>
+      <span class="pi">-</span> <span class="s">lsblk</span> <span class="c1"># debug, shows available drives. sda through sdc are occupied by SSD, install USB, and cloud-config SD card.</span>
+      <span class="pi">-</span> <span class="s">mount /dev/sdd1 /mnt/usb</span>
+      <span class="pi">-</span> <span class="s">dpkg -i /mnt/usb/Apps/wpa_supplicant/*</span> <span class="c1"># Install the package at the location on the USB drive.</span>
+      <span class="pi">-</span> <span class="s">echo "Unplug USB drive, insert wireless adapter. You have 15 seconds to do this."</span>
+      <span class="pi">-</span> <span class="s">sleep </span><span class="m">15</span>
+      <span class="c1"># END SECTION</span>
+
+      <span class="pi">-</span> <span class="s">netplan apply</span> <span class="c1"># Applies network based on config in /etc/netplan/90-netcfg.yaml .</span>
+      <span class="pi">-</span> <span class="s">apt --fix-broken install -y</span> <span class="c1"># Fixes dependencies before continuing</span>
+      <span class="pi">-</span> <span class="s">apt update &amp;&amp; apt upgrade -y</span> <span class="c1"># Updates packages</span>
+
+      <span class="c1"># Configure onboard wireless network adapter but don't use "netplan apply" until reboot occurs.</span>
+      <span class="pi">-</span> <span class="s">apt-get install bcmwl-kernel-source -y</span> <span class="c1"># This command is only needed if the laptop's internal WiFi adapter needs a driver from the internet.</span>
+      <span class="pi">-</span> <span class="s">sed -i 's/wlx78542eea544a/wlp3s0/g' /etc/netplan/90-netcfg.yaml</span> <span class="c1"># This command is only needed if installing over WiFi. Replace WiFi adapter names with that of USB WiFi and Internal WiFi adapters, respectively.</span>
+
+      <span class="pi">-</span> <span class="s">apt-get install wpa_supplicant xfce4 xfce4-goodies xdotool lightdm x11-xserver-utils git curl python3-xlib nodejs npm -y</span> <span class="c1"># all packages needed for this project</span>
+      <span class="pi">-</span> <span class="s">apt-get remove --purge -y light-locker</span> <span class="c1"># Remove light-locker accessory of Xfce4 to prevent screen from locking automatically</span>
+      <span class="pi">-</span> <span class="pi">|</span> <span class="c1"># Make a file that configures xfce4/lightdm to log in user automatically</span>
+        <span class="s">cat &gt; /etc/lightdm/lightdm.conf &lt;&lt; EOF</span>
+        <span class="s">[Seat:*]</span>
+        <span class="s">autologin-user=jason</span>
+        <span class="s">autologin-user-timeout=0</span>
+        <span class="s">user-session=xfce</span>
+        <span class="s">EOF</span>
+      <span class="pi">-</span> <span class="pi">|</span> <span class="c1"># Make a file that further configures xfce4. Some of these lines may not be needed.</span>
+        <span class="s">cat &gt; /home/jason/.xprofile &lt;&lt; EOF</span>
+        <span class="s">#!/bin/bash</span>
+        <span class="s"># Allow x session to all users</span>
+        <span class="s">xhost +</span>
+
+        <span class="s"># Enable screen blanking and DPMS to allow screen off</span>
+        <span class="s">xset s 300 300         # blank screen after 5 minutes (300s)</span>
+        <span class="s">xset +dpms             # enable DPMS</span>
+        <span class="s">xset dpms 300 300 300  # standby, suspend, off all at 5 mins</span>
+
+        <span class="s"># XFCE power manager: allow screen blanking but disable locking</span>
+        <span class="s">xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/blank-on-ac --create -t int -s 5</span>
+        <span class="s">xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-enabled --create -t bool -s true</span>
+
+        <span class="s"># Disable XFCE lock on suspend and idle</span>
+        <span class="s">xfconf-query -c xfce4-session -p /general/LockCommand --create -t string -s ""</span>
+        <span class="s">xfconf-query -c xfce4-session -p /general/SaveOnExit --create -t bool -s false</span>
+        <span class="s">xfconf-query -c xfce4-session -p /shutdown/LockScreen --create -t bool -s false</span>
+        <span class="s">xfconf-query -c xfce4-session -p /general/AutoSaveSession --create -t bool -s false</span>
+        <span class="s">xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-suspend --create -t bool -s false</span>
+        <span class="s">xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-hibernate --create -t bool -s false</span>
+        <span class="s">xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-on-lid-close --create -t bool -s false</span>
+
+        <span class="s"># Configures power button to trigger soft shutdown</span>
+        <span class="s">xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/power-button-action -s 4</span>
+
+        <span class="s"># Move cursor to 0,0 at boot to prevent it from obstructing live video</span>
+        <span class="s">xdotool mousemove 0 0</span>
+        <span class="s">EOF</span>
+      <span class="pi">-</span> <span class="s">chmod +x /home/jason/.xprofile</span> <span class="c1"># needed</span>
+      <span class="pi">-</span> <span class="s">chown 1000:1000 /home/jason/.xprofile</span> <span class="c1"># also needed, 1000 was used because this command was originally in late-commands which runs before user creation; 1000 is a placeholder. It may be OK to change to "jason:jason".</span>
+
+      <span class="c1"># Commented this section because internal webcam is not used</span>
+      <span class="c1"># Disable internal webcam so only external USB webcam is used. idVendor and idProduct are specific to each webcam.</span>
+      <span class="c1">#- |</span>
+      <span class="c1">#  cat &gt; /etc/udev/rules.d/99-disable-internal-webcam.rules &lt;&lt; EOF</span>
+      <span class="c1">#  ATTR{idVendor}=="05c8", ATTR{idProduct}=="022a", ATTR{authorized}="0"</span>
+      <span class="c1">#  EOF</span>
+
+      <span class="c1"># Download RemoteFaceTimePickup repository - handles automated web browser and keyboard grabber script.</span>
+      <span class="pi">-</span> <span class="s">su - jason -c 'npm i puppeteer'</span> <span class="c1"># install puppeteer which is an automated browser program</span>
+      <span class="pi">-</span> <span class="s">git clone https://github.com/rinehartj/RemoteFaceTimePickup.git /home/jason/RemoteFaceTimePickup</span>
+      <span class="pi">-</span> <span class="s">chmod +x /home/jason/RemoteFaceTimePickup/keyboard_grabber.py</span> <span class="c1"># this file decides when to run index.cjs; it can happen upon spacebar press or immediately at boot (if bypass is set to true).</span>
+      <span class="pi">-</span> <span class="s">mkdir -p /home/jason/.config/autostart</span> <span class="c1"># Add keyboard_grabber.py to run at every boot</span>
+      <span class="pi">-</span> <span class="pi">|</span>
+        <span class="s">cat &gt; /home/jason/.config/autostart/keyboard_grabber.desktop &lt;&lt; EOF</span>
+        <span class="s">[Desktop Entry]</span>
+        <span class="s">Type=Application</span>
+        <span class="s">Name=keyboard_grabber.py</span>
+        <span class="s">Exec=/bin/bash -c "DISPLAY=:0 /usr/bin/python3 /home/jason/RemoteFaceTimePickup/keyboard_grabber.py &gt;&gt; /home/jason/keyboard_grabber.log 2&gt;&amp;1"</span>
+        <span class="s">X-GNOME-Autostart-enabled=true</span>
+        <span class="s">EOF</span>
+      <span class="pi">-</span> <span class="s">chown -R jason:jason /home/jason/.config/autostart</span>
+      <span class="c1"># The following section is not needed because a Cloudflare reverse SSH tunnel will be installed manually later.</span>
+      <span class="c1"># Download cloudflare DDNS updater and configure it for our specific domain</span>
+      <span class="pi">-</span> <span class="s">git clone https://github.com/K0p1-Git/cloudflare-ddns-updater.git /home/jason/cloudflare-ddns-updater</span>
+      <span class="pi">-</span> <span class="s">cp /home/jason/cloudflare-ddns-updater/cloudflare-template.sh /home/jason/cloudflare-ddns-updater/cloudflare.sh</span>
+      <span class="pi">-</span> <span class="s">sed -i 's/auth_email=""/auth_email="your@email.com"/' /home/jason/cloudflare-ddns-updater/cloudflare.sh</span>
+      <span class="pi">-</span> <span class="s">sed -i 's/auth_method="token"/auth_method="global"/' /home/jason/cloudflare-ddns-updater/cloudflare.sh</span>
+      <span class="pi">-</span> <span class="s">sed -i 's/auth_key=""/auth_key="redacted"/' /home/jason/cloudflare-ddns-updater/cloudflare.sh</span>
+      <span class="pi">-</span> <span class="s">sed -i 's/zone_identifier=""/zone_identifier="redacted"/' /home/jason/cloudflare-ddns-updater/cloudflare.sh</span>
+      <span class="pi">-</span> <span class="s">sed -i 's/record_name=""/record_name="your.domain.com"/' /home/jason/cloudflare-ddns-updater/cloudflare.sh</span>
+      <span class="pi">-</span> <span class="s">sed -i 's/proxy="false"/proxy="true"/' /home/jason/cloudflare-ddns-updater/cloudflare.sh</span>
+      <span class="c1"># Add cloudflare DDNS updater to run every 5 minutes.</span>
+      <span class="pi">-</span> <span class="s">su - jason -c '(crontab -l 2&gt;/dev/null; echo "*/5 * * * * /bin/bash /home/jason/cloudflare-ddns-updater/cloudflare.sh") | crontab -'</span>
+      <span class="c1"># End Section</span>
+
+    <span class="na">power_state</span><span class="pi">:</span>
+      <span class="na">mode</span><span class="pi">:</span> <span class="s">reboot</span>
+      <span class="na">message</span><span class="pi">:</span> <span class="s">rebooting after initial setup</span>
+      <span class="na">timeout</span><span class="pi">:</span> <span class="m">5</span>
+      <span class="na">condition</span><span class="pi">:</span> <span class="s">True</span>
+
+  <span class="na">late-commands</span><span class="pi">:</span>
+    <span class="c1"># For the below command, set the adapter name (after "wifis:") to that of the onboard WiFi adapter if installing over ethernet, or that of the USB WiFi adapter if installing over WiFi.</span>
+    <span class="pi">-</span> <span class="pi">|</span> <span class="c1"># (SET WIFI BELOW) Used 90 below to supersede 50-cloud-config.yaml which is assumed to be present for part of the installation</span>
+      <span class="s">cat &gt; /target/etc/netplan/90-netcfg.yaml &lt;&lt; EOF</span>
+      <span class="s">network:</span>
+        <span class="s">version: 2</span>
+        <span class="s">wifis:</span>
+          <span class="s">wlx78542eea544a:</span>
+            <span class="s">optional: true</span>
+            <span class="s">access-points:</span>
+              <span class="s">"ESSID":</span>
+                <span class="s">password: "password"</span>
+            <span class="s">dhcp4: true</span>
+      <span class="s">EOF</span>
+    <span class="pi">-</span> <span class="s">netplan generate</span>
+    <span class="pi">-</span> <span class="s">netplan apply</span>
+
+  <span class="na">package_upgrade</span><span class="pi">:</span> <span class="kc">false</span> <span class="c1"># Performed manually in runcmd section</span>
+
+</code></pre></div></div> </details> <blockquote> <p>Thank you for reading!</p> </blockquote> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2025 Jason R. Rinehart. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: September 01, 2025. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js" integrity="sha256-TtLOdUA8mstPoO6sGvHIGx2ceXrrX4KgIItO06XOn8A=" crossorigin="anonymous"></script> <script defer src="/assets/js/mermaid-setup.js?38ca0a0126f7328d2d9a46bad640931f" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?230637657ac0b42e92d76e2b4c1b4764"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>

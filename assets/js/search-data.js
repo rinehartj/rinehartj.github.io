@@ -91,6 +91,11 @@ ninja.data = [{
           description: "Allowed smooth handling of resource-intense applications.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/computer/";
+            },},{id: "projects-automated-facetime-pickup-system",
+          title: 'Automated FaceTime Pickup System',
+          description: "A one-button solution to launching a FaceTime call, ideal for seniors.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/facetimelaptop/";
             },},{id: "projects-hexacopter-drone",
           title: 'Hexacopter Drone',
           description: "6 arms, 11.52kg motor thrust",
