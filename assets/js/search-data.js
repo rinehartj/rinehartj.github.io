@@ -32,10 +32,10 @@ ninja.data = [{
           },
         },{id: "nav-3d-portfolio",
           title: "3D portfolio",
-          description: "A portfolio of my 3D models.",
+          description: "A showcase of my 3D modeling work",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/3Dportfolio/";
+            window.location.href = "/3d-portfolio/";
           },
         },{id: "post-how-to-install-dell-1100-print-drivers-on-windows-11",
         
@@ -81,7 +81,22 @@ ninja.data = [{
             window.location.href = "/blog/2025/webupdates/";
           
         },
-      },{id: "books-the-godfather",
+      },{id: "3dportfolio-essop-10-package-ic",
+          title: 'ESSOP-10 Package IC',
+          description: "A small 10-pin IC package.",
+          section: "3dportfolio",handler: () => {
+              window.location.href = "/3d-portfolio/ESSOP-10-package-IC/";
+            },},{id: "3dportfolio-piper-cherokee-180-trim-piece",
+          title: 'Piper Cherokee 180 Trim Piece',
+          description: "This trim piece fits on the bottom floor beam of the Piper Cherokee 180 and similar aircraft.",
+          section: "3dportfolio",handler: () => {
+              window.location.href = "/3d-portfolio/cherokee-trim-piece/";
+            },},{id: "3dportfolio-3d-printable-wall-shelf",
+          title: '3D-printable Wall Shelf',
+          description: "a 3D-printable wall shelf mounted via adhesive strips",
+          section: "3dportfolio",handler: () => {
+              window.location.href = "/3d-portfolio/wallshelf-3Dprint/";
+            },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
