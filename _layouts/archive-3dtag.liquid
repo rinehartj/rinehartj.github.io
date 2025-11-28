@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title"><i class="fa-solid fa-hashtag fa-sm"></i> {{ page.title }}</h1>
+    <p class="post-description">an archive of 3D models with this tag</p>
+  </header>
+
+  <article class="archive">
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        {% assign sorted_models = page.posts | sort: 'importance' %}
+        {% for model in sorted_models %}
+          <tr>
+            <th scope="row" style="width: 150px;">
+              {% if model.img %}
+                <img src="{{ model.img | relative_url }}" alt="{{ model.title }}" style="width: 100%; height: auto; border-radius: 4px;">
+              {% else %}
+                <div style="width: 100%; height: 80px; background: var(--global-code-bg-color); border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-cube" style="font-size: 2rem; color: var(--global-text-color-light); opacity: 0.3;"></i>
+                </div>
+              {% endif %}
+            </th>
+            <td>
+              <a class="post-link" href="{{ model.url | relative_url }}">{{ model.title }}</a>
+              {% if model.description %}
+                <br>
+                <span style="color: var(--global-text-color-light); font-size: 0.875rem;">{{ model.description }}</span>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </article>
+
+  <div style="margin-top: 2rem;">
+    <a
+      href="{{ '/3d-portfolio/' | relative_url }}"
+      class="btn btn-sm"
+      style="border: 1px solid var(--global-theme-color); color: var(--global-theme-color); padding: 0.5rem 1rem; text-decoration: none; border-radius: 4px;"
+    >
+      ← Back to 3D Portfolio
+    </a>
+  </div>
+</div>

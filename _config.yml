@@ -154,7 +154,10 @@ newsletter:
 # Collections
 # -----------------------------------------------------------------------------
 
-collections:
+collections: # this and following added by Jason
+  3dportfolio:
+    output: true
+    permalink: /3d-portfolio/:path/ # end added by Jason
   books:
     output: true
   news:
@@ -274,9 +277,12 @@ jekyll-archives:
       categories: "/blog/:type/:name/"
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-
-display_tags: ["hardware", "firmware", "software", "systems"] # these tags will be displayed on the front page of your blog
-display_categories: ["in-progress"] # these categories will be displayed on the front page of your blog
+  3dportfolio: # this and following added by Jason
+    enabled: [tags]
+    permalinks:
+      tags: "/3d-portfolio/tag/:name/" # end added by Jason
+display_tags: ["assembly", "pcb", "3D print"] # these tags will be displayed on the front page of your blog
+display_categories: [] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

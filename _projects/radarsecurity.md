@@ -8,23 +8,6 @@ category: academic
 related_publications: false
 ---
 
-<!-- Import the component -->
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-
-<!-- Use it like any other HTML element -->
-
-<model-viewer 
-  alt="Radar Security System Control Box" 
-  src="/assets/3d/RadarBoxSceneTest.glb" 
-  ar 
-  poster="/assets/img/RadarSecurity/RadarSecurityPoster.webp" 
-  shadow-intensity="1" 
-  camera-controls 
-  disable-zoom
-  touch-action="pan-y"
-  style="width: 100%; height: 50vh; margin: auto;">
-</model-viewer>
-
 > This article was adapted from a research poster I created with Trinh Huynh, project partner, and Dr. Saurav Basnet of Wentworth Institute of Technology, advisor.
 > <br>
 
