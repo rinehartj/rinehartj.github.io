@@ -86,6 +86,11 @@ ninja.data = [{
           description: "A small 10-pin IC package.",
           section: "3dportfolio",handler: () => {
               window.location.href = "/3d-portfolio/ESSOP-10-package-IC/";
+            },},{id: "3dportfolio-hess-truck-trailer-pivot-replacement-part",
+          title: 'HESS Truck Trailer Pivot Replacement Part',
+          description: "a 3D-printed replacement part to fix a 1990s-era HESS truck with a broken trailer.",
+          section: "3dportfolio",handler: () => {
+              window.location.href = "/3d-portfolio/HESS-truck-fix/";
             },},{id: "3dportfolio-piper-cherokee-180-trim-piece",
           title: 'Piper Cherokee 180 Trim Piece',
           description: "This trim piece fits on the bottom floor beam of the Piper Cherokee 180 and similar aircraft.",
