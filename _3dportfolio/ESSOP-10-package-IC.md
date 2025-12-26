@@ -7,9 +7,6 @@ model: /assets/3d/ESSOP-10-package-IC.glb
 importance: 1
 tags: [component]
 
-extended_description: |
-  This is a 3D model of an ESSOP-10 Package IC. Dimensions were obtained from an online PDF hosted by uusemi.com, but some dimensions were unclear and needed to be extrapolated. Dimensions were verified in-person with the CH224 USB-PD chip. This model is used in another model of mine titled "Micro USB-PD Board".
-
 specifications:
   - label: Date
     value: 2025
@@ -19,3 +16,5 @@ links:
   - name: View on GrabCAD
     url: https://grabcad.com/library/essop-10-package-ic-1
 ---
+
+This is a 3D model of an ESSOP-10 Package IC. Dimensions were obtained from an online PDF hosted by uusemi.com, but some dimensions were unclear and needed to be extrapolated. Dimensions were verified in-person with the CH224 USB-PD chip. This model is used in another model of mine titled "Micro USB-PD Board".

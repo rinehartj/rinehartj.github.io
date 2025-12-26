@@ -7,9 +7,6 @@ model: /assets/3d/cherokee-trim-piece.glb
 importance: 1
 tags: [3D print, airplane]
 
-extended_description: |
-  This trim piece fits on the bottom floor beam of the Piper Cherokee 180 and similar aircraft.
-
 specifications:
   - label: Date
     value: June 2022
@@ -20,3 +17,5 @@ specifications:
 #  - name: Download
 #    url: /assets/3D/example-model.glb
 ---
+
+This trim piece fits on the bottom floor beam of the Piper Cherokee 180 and similar aircraft.

@@ -9,11 +9,12 @@ layout: default
 
   <article>
     <div class="model-viewer-page">
+      <!-- Full-width model viewer at top -->
       <div class="model-viewer-container-page">
         <model-viewer
           src="{{ page.model | relative_url }}"
           alt="{{ page.title }}"
-          style="width: 100%; height: 50vh; margin: auto;"
+          style="width: 100%; height: 40vh; margin: auto;"
           camera-controls
           touch-action="pan-y"
           shadow-intensity="1"
@@ -28,54 +29,55 @@ layout: default
         </model-viewer>
       </div>
 
-      <div class="model-details">
-        {% if page.extended_description %}
-          <div class="model-extended-description">
-            {{ page.extended_description | markdownify }}
+      <!-- Two-column layout below viewer -->
+      <div class="model-content-grid">
+        <!-- Left column: Markdown content -->
+        <div class="model-content-column">
+          <div class="model-content">
+            {{ content }}
           </div>
-        {% endif %}
+        </div>
 
-        {% if page.specifications %}
-          <div class="model-specifications">
-            <h3>Specifications</h3>
-            {% for spec in page.specifications %}
-              <div class="spec-item">
-                <span class="spec-label">{{ spec.label }}:</span>
-                <span class="spec-value">{{ spec.value }}</span>
+        <!-- Right column: Specs, tags, links -->
+        <div class="model-sidebar">
+          {% if page.specifications %}
+            <div class="model-specifications">
+              <h3>Specifications</h3>
+              {% for spec in page.specifications %}
+                <div class="spec-item">
+                  <span class="spec-label">{{ spec.label }}:</span>
+                  <span class="spec-value">{{ spec.value }}</span>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if page.tags %}
+            <div class="model-tags-section">
+              <h3>Tags</h3>
+              <div class="tags">
+                {% for tag in page.tags %}
+                  <a href="{{ tag | slugify | prepend: '/3d-portfolio/tag/' | relative_url }}" class="tag">
+                    <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag -}}
+                  </a>
+                  {% unless forloop.last %}
+                    &nbsp;
+                  {% endunless %}
+                {% endfor %}
               </div>
-            {% endfor %}
-          </div>
-        {% endif %}
-
-        {% if page.tags %}
-          <div class="model-tags-section">
-            <h3>Tags</h3>
-            <div class="tags">
-              {% for tag in page.tags %}
-                <a href="{{ tag | slugify | prepend: '/3d-portfolio/tag/' | relative_url }}" class="tag">
-                  <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag -}}
-                </a>
-                {% unless forloop.last %}
-                  &nbsp;
-                {% endunless %}
-              {% endfor %}
             </div>
-          </div>
-        {% endif %}
+          {% endif %}
 
-        {% if page.links %}
-          <div class="model-links-section">
-            <h3>Links</h3>
-            <div class="links">
-              {% for link in page.links %}
-                <a href="{{ link.url }}" target="_blank" class="model-link-btn">{{ link.name }}</a>
-              {% endfor %}
+          {% if page.links %}
+            <div class="model-links-section">
+              <h3>Links</h3>
+              <div class="links">
+                {% for link in page.links %}
+                  <a href="{{ link.url }}" target="_blank" class="model-link-btn">{{ link.name }}</a>
+                {% endfor %}
+              </div>
             </div>
-          </div>
-        {% endif %}
-
-        <div class="back-to-portfolio">
-          <a href="{{ '/3d-portfolio/' | relative_url }}" class="btn">← Back to Portfolio</a>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -87,16 +89,9 @@ layout: default
 <style>
   .model-viewer-page {
     margin-top: 2rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
-    align-items: start;
-  }
-
-  @media (max-width: 968px) {
-    .model-viewer-page {
-      grid-template-columns: 1fr;
-    }
   }
 
   .model-viewer-container-page {
@@ -110,17 +105,52 @@ layout: default
 
   .model-viewer-container-page model-viewer {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     margin: auto;
   }
 
-  .model-details {
-    /* Removed overflow-y and max-height to allow natural flow */
+  /* Two-column grid for content below viewer */
+  .model-content-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
   }
 
-  .model-extended-description {
-    margin-bottom: 2rem;
+  @media (max-width: 968px) {
+    .model-content-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .model-content-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .model-content {
     line-height: 1.6;
+    font-size: 1rem;
+    flex-grow: 1;
+  }
+
+  .model-content > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .model-content h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .model-content h3 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .model-sidebar {
+    /* Sidebar with specs, tags, links */
   }
 
   .model-specifications,
@@ -191,6 +221,7 @@ layout: default
     border-radius: 4px;
     transition: all 0.3s;
     text-align: center;
+    width: 100%;
   }
 
   .model-link-btn:hover {
@@ -198,28 +229,6 @@ layout: default
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
     text-decoration: none;
-  }
-
-  .back-to-portfolio {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--global-divider-color);
-  }
-
-  .back-to-portfolio .btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: var(--global-bg-color);
-    color: var(--global-theme-color);
-    text-decoration: none;
-    border: 2px solid var(--global-theme-color);
-    border-radius: 4px;
-    transition: all 0.3s;
-  }
-
-  .back-to-portfolio .btn:hover {
-    background: var(--global-theme-color);
-    color: white;
   }
 
   /* Loading progress bar */
@@ -263,8 +272,10 @@ layout: default
 
     modelViewer.addEventListener('progress', (event) => {
       const progress = event.detail.totalProgress;
-      updateBar.style.width = `${progress * 100}%`;
-      if (progress === 1) {
+      if (updateBar) {
+        updateBar.style.width = `${progress * 100}%`;
+      }
+      if (progress === 1 && progressBar) {
         progressBar.classList.add('hide');
       }
     });
