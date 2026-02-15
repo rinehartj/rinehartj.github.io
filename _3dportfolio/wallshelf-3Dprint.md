@@ -6,7 +6,6 @@ img: /assets/img/3d/wallshelf-3Dprint.webp
 model: /assets/3d/wallshelf-3Dprint.glb
 importance: 1
 tags: [3D print]
-
 specifications:
   - label: Date
     value: 2025

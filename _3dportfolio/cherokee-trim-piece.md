@@ -6,7 +6,6 @@ img: /assets/img/3d/cherokee-trim-piece.webp
 model: /assets/3d/cherokee-trim-piece.glb
 importance: 1
 tags: [3D print, airplane]
-
 specifications:
   - label: Date
     value: June 2022

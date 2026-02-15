@@ -6,12 +6,9 @@ img: /assets/img/3d/ESSOP-10-package-IC.webp
 model: /assets/3d/ESSOP-10-package-IC.glb
 importance: 1
 tags: [component]
-
 specifications:
   - label: Date
     value: 2025
-
-# Optional links
 links:
   - name: View on GrabCAD
     url: https://grabcad.com/library/essop-10-package-ic-1

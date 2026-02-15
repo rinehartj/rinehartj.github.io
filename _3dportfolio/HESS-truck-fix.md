@@ -7,7 +7,6 @@ img: /assets/img/3d/HESS-truck-fix.webp
 model: /assets/3d/HESS-truck-fix.glb
 importance: 1
 tags: [3D print]
-
 specifications:
   - label: Date
     value: 2025
