@@ -29,13 +29,13 @@ find "$INPUT_DIR" -type f | while read -r file; do
       continue
     fi
   fi
-
+  
   # Strip metadata if file exists but preserve ICC color profile. Comment this entire
   # "if" statement to disable metadata scrubbing.
-  #if [[ "$lower_ext" =~ ^(jpg|jpeg|png|webp|tiff)$ ]] && [[ -f "$file" ]]; then
-  #  echo "  Stripping metadata: $file"
-  #  exiftool -all= --icc_profile:all -overwrite_original "$file"
-  #fi
+  if [[ "$lower_ext" =~ ^(jpg|jpeg|png|webp|tiff)$ ]] && [[ -f "$file" ]]; then
+    echo "  Stripping metadata: $file"
+    exiftool -all= --icc_profile:all -overwrite_original "$file"
+  fi
 done
 
 echo "Done."
