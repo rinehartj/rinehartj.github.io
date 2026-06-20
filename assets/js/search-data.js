@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/3d-portfolio/";
           },
-        },{id: "post-how-to-install-dell-1100-print-drivers-on-windows-11",
+        },{id: "post-flicker-detector-circuit-for-leds-amp-more",
+        
+          title: "Flicker Detector Circuit for LEDs &amp; More",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/flickerDetector/";
+          
+        },
+      },{id: "post-how-to-install-dell-1100-print-drivers-on-windows-11",
         
           title: "How to install Dell 1100 Print Drivers on Windows 11",
         
