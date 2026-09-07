@@ -193,15 +193,15 @@ collections: # this and following added by Jason
     output: true
     permalink: /3d-portfolio/:path/ # end added by Jason
   books:
-    output: true
+    output: false # folder deleted, this value changed by Jason
   news:
     defaults:
       layout: post
-    output: true
+    output: false # folder deleted, this value changed by Jason
   projects:
     output: true
   teachings:
-    output: true
+    output: false # folder deleted, this value changed by Jason
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -338,8 +338,7 @@ jekyll-archives:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
-  books:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  # Jason removed book section
   3dportfolio: # this and following added by Jason
     enabled: [tags]
     permalinks:

@@ -2,7 +2,7 @@
 layout: distill
 title: "Raspberry Pi Pico as a hardware ISP"
 description: "Created on February 23, 2025"
-tags: hardware, firmware
+tags: hardware firmware # use a space to separate tags!!
 thumbnail: assets/img/hardwareISP/isp.jpg
 bibliography: 2025-02-23-hardwareISP.bib
 date: 2025-02-23
