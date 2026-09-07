@@ -1,0 +1,119 @@
+{% for model in include.models %}
+  {% assign tags = model.tags | join: '' %}
+
+  <li>
+    {% if model.img %}
+      <div class="row">
+        <div class="col-sm-9">
+    {% endif %}
+
+    <h3>
+      <a class="model-title-link" href="{{ model.url | relative_url }}">{{ model.title }}</a>
+    </h3>
+    <p>{{ model.description }}</p>
+
+    <p class="post-tags">
+      {% if tags != '' %}
+        {% for tag in model.tags %}
+          <a href="{{ tag | slugify | prepend: '/3d-portfolio/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+          {% unless forloop.last %}
+            &nbsp;
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+    </p>
+
+    {% if model.img %}
+      </div>
+      <div class="col-sm-3">
+        <a href="{{ model.url | relative_url }}">
+          <img class="card-img" src="{{ model.img | relative_url }}" style="object-fit: cover; height: 90%" alt="{{ model.title }}">
+        </a>
+      </div>
+      </div>
+    {% endif %}
+  </li>
+{% endfor %}
+
+<style>
+  .post-list li {
+    border-bottom: 1px solid var(--global-divider-color);
+    list-style: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .post-list li h3 {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .post-list li .model-title-link {
+    color: var(--global-text-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .post-list li .model-title-link:hover {
+    color: var(--global-theme-color);
+  }
+
+  .post-list li p {
+    margin-bottom: 0.5rem;
+  }
+
+  .post-list li .post-tags {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0;
+  }
+
+  .post-list li .post-tags span {
+    color: var(--global-text-color-light);
+  }
+
+  .post-list li .post-tags a {
+    color: var(--global-text-color-light);
+    text-decoration: none;
+  }
+
+  .post-list li .post-tags a:hover {
+    color: var(--global-theme-color);
+  }
+
+  .post-list li .card-img {
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+  }
+
+  .post-list li .card-img:hover {
+    transform: scale(1.02);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .post-list li .row {
+      flex-direction: column-reverse;
+    }
+
+    .post-list li .col-sm-3 {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .post-list li .col-sm-3 a {
+      display: block;
+      width: 100%;
+    }
+
+    .post-list li .card-img {
+      height: auto !important;
+      width: 100%;
+      max-height: none !important;
+      object-fit: contain;
+      display: block;
+    }
+  }
+</style>

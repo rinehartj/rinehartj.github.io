@@ -10,7 +10,7 @@
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
     "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-      "packages": "build-essential,imagemagick,inotify-tools,jupyter-nbconvert,procps,ruby-full,zlib1g-dev"
+      "packages": "build-essential,imagemagick,inotify-tools,jupyter-nbconvert,procps,ruby-full,zlib1g-dev,libimage-exiftool-perl,libheif-dev" //libimage-exiftool-perl and libheif-dev added by Jason, both used in process-images.sh (when called, that script converts HEIC to JPG and removes metadata from images)
     },
     "ghcr.io/devcontainers-extra/features/prettier:1.0.2": {}
   },
@@ -30,5 +30,5 @@
     }
   },
 
-  "remoteUser": "vscode"
+  "remoteUser": "root" // Changed by Jason from "vscode" to allow the Ruby LSP to be happy, see README.md
 }
