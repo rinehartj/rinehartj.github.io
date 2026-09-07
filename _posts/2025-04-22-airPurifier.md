@@ -1,6 +1,6 @@
 ---
 layout: post
-# tags: hardware (shared by multiple files?)
+tags: hardware
 title: "Fixing an air purifier with an obstructed PM sensor"
 thumbnail: assets/img/airPurifier/airPurifier_main.jpg
 date: 2025-04-22

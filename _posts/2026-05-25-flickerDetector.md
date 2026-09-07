@@ -1,6 +1,7 @@
 ---
 layout: distill
 title: "Flicker Detector Circuit for LEDs & More"
+tags: hardware
 thumbnail: assets/img/flickerDetector/flickerDetector4.jpg
 date: 2026-05-25
 ---
