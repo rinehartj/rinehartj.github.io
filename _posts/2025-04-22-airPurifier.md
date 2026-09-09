@@ -4,6 +4,7 @@ tags: hardware
 title: "Fixing an air purifier with an obstructed PM sensor"
 thumbnail: assets/img/airPurifier/airPurifier_main.jpg
 date: 2025-04-22
+indexed: true
 ---
 
 > This article outlines how I fixed a Levoit air purifier with broken automatic function. It didn't automatically ramp up when air was filled with particles. Instead, it always displayed a near-zero particulate matter (PM) count.
