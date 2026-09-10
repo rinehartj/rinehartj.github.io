@@ -189,9 +189,8 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections: # this and following added by Jason
-  3dportfolio:
-    output: true
-    permalink: /3d-portfolio/:path/ # end added by Jason
+  3d-portfolio:
+    output: true # end added by Jason
   books:
     output: false # folder deleted, this value changed by Jason
   news:
@@ -339,7 +338,7 @@ jekyll-archives:
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
   # Jason removed book section
-  3dportfolio: # this and following added by Jason
+  3d-portfolio: # this and following added by Jason
     enabled: [tags]
     permalinks:
       tags: "/3d-portfolio/tag/:name/" # end added by Jason

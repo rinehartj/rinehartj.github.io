@@ -14,3 +14,12 @@ Moved _layouts/3d_model.liquid
 Moved _includes/3d_portfolio.liquid
 
 Carried over values from _config.yml
+
+Removed archive-3dtag.liquid which seemed to do nothing anyways; it looks like jekyll-archives is using its own page liquid file.
+
+Manually browsed through the website.
+
+Created a tag archive/pre-v1-migration in the remote repository using a clone of the existing repo
+
+In the new repo, I removed the existing remote (https://github.com/alshedivat/al-folio.git) and added the new remote (https://github.com/rinehartj/rinehartj.github.io.git)
+

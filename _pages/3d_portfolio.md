@@ -16,7 +16,7 @@ nav_order: 4
       <h2>{{ page.description }}</h2>
     </div>
   {% endif %}
-  {% assign all_tags = site["3dportfolio"] | map: "tags" | join: "," | split: "," | uniq | sort %}
+  {% assign all_tags = site["3d-portfolio"] | map: "tags" | join: "," | split: "," | uniq | sort %}
   {% assign has_tags = false %}
   {% for tag in all_tags %}
     {% if tag != "" %}
@@ -42,7 +42,7 @@ nav_order: 4
   {% endif %}
 
   <ul class="post-list">
-    {% assign sorted_models = site["3dportfolio"] | sort: "importance" %}
+    {% assign sorted_models = site["3d-portfolio"] | sort: "importance" %}
     {% include 3d_portfolio.liquid models=sorted_models %}
   </ul>
 
