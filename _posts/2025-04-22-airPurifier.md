@@ -11,7 +11,7 @@ indexed: true
 
 Tools I needed: 6x flat-head (common) screwdrivers or butter knives, pressurized air or vacuum.
 
-<div class="row mt-3 mb-3 col-sm-6 mx-auto">
+<div class="mt-3 mb-3 col-sm-6 mx-auto">
     {% include figure.liquid loading="eager" path="assets/img/airPurifier/airPurifier_main.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
@@ -21,7 +21,7 @@ Tools I needed: 6x flat-head (common) screwdrivers or butter knives, pressurized
 
 3. I released the 6x plastic tabs that hold the unit together. This can be accomplished with flat-head (common) screwdrivers or butter knives as seen in the following picture.
 
-<div class="row mt-3 mb-3 col-sm-6 mx-auto">
+<div class="mt-3 mb-3 col-sm-6 mx-auto">
     {% include figure.liquid loading="eager" path="assets/img/airPurifier/airPurifier_screws.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
@@ -29,7 +29,7 @@ Tools I needed: 6x flat-head (common) screwdrivers or butter knives, pressurized
 
 5. I unplugged the connector (which I know to be JST-GH from my drone project) from the laser PM count sensor.
 
-<div class="row mt-3 mb-3 col-sm-6 mx-auto">
+<div class="mt-3 mb-3 col-sm-6 mx-auto">
     {% include figure.liquid loading="eager" path="assets/img/airPurifier/airPurifier_laserbox.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
@@ -37,7 +37,7 @@ Tools I needed: 6x flat-head (common) screwdrivers or butter knives, pressurized
 
 7. I replaced the sensor (as seen below) and reassembled the unit. Make sure to clean the air filter!
 
-<div class="row mt-3 mb-3 col-sm-6 mx-auto">
+<div class="mt-3 mb-3 col-sm-6 mx-auto">
     {% include figure.liquid loading="eager" path="assets/img/airPurifier/airPurifier_laserbox_2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 

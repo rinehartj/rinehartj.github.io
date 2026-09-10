@@ -104,8 +104,8 @@ The project utilizes two WiFi equipped microcontrollers: a Raspberry Pi B 3+ and
 
 ---
 
-<div class="row mt-3 mb-3 col-sm-6 mx-auto">
-    {% include figure.liquid loading="eager" path="/assets/img/radarsecurity/network_diagram.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+<div style="max-width: 450px; margin: 0 auto;">
+  {% include figure.liquid loading="eager" path="/assets/img/radarsecurity/network_diagram.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
 - A wireless router connects the whole
@@ -128,8 +128,8 @@ The project utilizes two WiFi equipped microcontrollers: a Raspberry Pi B 3+ and
 - Ability to distinguish people from the environment by modified Python Code
 - Work independently without third party service provider
 
-<div class="row mt-3 mb-3 col-sm-6 mx-auto">
-    {% include figure.liquid loading="eager" path="/assets/img/radarsecurity/output_sample.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+<div style="max-width: 450px; margin: 0 auto;">
+  {% include figure.liquid loading="eager" path="/assets/img/radarsecurity/output_sample.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
 By using radar sensor and modified Python code base on motion behavior method, the product was able to detect motion, minimized fault alerts between human motions and environment factors. The project may be continued with the following feature additions:

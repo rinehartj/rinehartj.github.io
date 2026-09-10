@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: distill
 title: LED Lightshow Circuit
 description: A custom LED controller for off-the-shelf LED strips.
 img: assets/img/lightshow.jpg
@@ -7,10 +7,19 @@ importance: 2
 category: fun
 related_publications: false
 toc:
-  beginning: true
+  - name: Concept
+  - name: Components
+  - name: Schematic
+  - name: Reverse Engineering the Remote
+  - name: Multithreading Support
+  - name: Setting a color
+  - name: RGB Color Cycle Algorithm
+  - name: Brightness Up/Down
+  - name: Speed Fast/Slow
+  - name: Full Python Code
 ---
 
-<div class="col-sm-5 mt-3 mt-md-0 mx-auto">
+<div style="max-width: 350px; margin: 0 auto;">
     {% include figure.liquid loading="eager" path="/assets/img/lightshow.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
@@ -55,13 +64,13 @@ LED strips generally cannot be powered by a microcontroller alone, so in additio
 One of the design goals was to keep the original remote as part of the system. The infrared sensor shipped with the LED set emitted a pulsed digital signal through its data pin, which was read by a digital IO pin on the Pi Pico. Each button caused the remote to emit a unique hex code, but I needed to empirically gather these codes to make a map of all button hex codes (below).
 
 <div class="row mt-3">
-    <div class="col-sm-3 mt-3 mt-md-0 mx-auto">
+    <div style="max-width: 150px; margin: 0 auto;">
         {% include figure.liquid loading="eager" path="/assets/img/lightshow/RemotePinout.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
         The remote's NEC8 codes were extracted by pressing each button and recording their corresponding numerical and hex code.
         </div>
     </div>
-    <div class="col-sm-3 mt-3 mt-md-0 mx-auto">
+    <div style="max-width: 150px; margin: 0 auto;">
         {% include figure.liquid loading="eager" path="/assets/img/lightshow/RemoteReference.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
         Infrared remote control for reference (not my photo). 

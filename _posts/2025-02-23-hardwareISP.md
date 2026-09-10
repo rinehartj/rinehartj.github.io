@@ -38,7 +38,7 @@ Finally, I made sure to use a USB cable that supported **data and power** (as op
 
 ## How I accidentally erased the bootloader
 
-<div class="row mt-3">
+<div class="row">
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="/assets/img/hardwareISP/MarlinOldFirmware.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
         {% include figure.liquid loading="eager" path="/assets/img/hardwareISP/MarlinNewFirmware.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}

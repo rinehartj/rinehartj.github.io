@@ -37,13 +37,13 @@ I counted the number of samples per millisecond in the above image and estimated
 Based on the estimated specifications above, I set out to design a transimpedance amplifier circuit, featuring a photodiode configured for reverse-bias. A transimpedance amplifier is useful for turning very small currents from the photodiode (in this case, the micro-Ampere range) into usable voltage signals that can be read by an Arduino, etc. The photodiode in this circuit has a maximum current output of 70 micro-Amps, which the circuit transforms to a voltage signal with a range of 0V to 3.3V. That signal could then be read by a microcontroller's ADC for analysis.
 
 <div class="row mt-3">
-    <div class="col-sm-7 mt-3 mt-md-0">
+    <div style="max-width: 450px; margin: 0 auto;">
         {% include figure.liquid loading="eager" path="/assets/img/flickerDetector/BPW34Amp_Sch_Rev_B.png" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             The flicker detector schematic, Revision B.
         </div>
     </div>
-    <div class="col-sm-5 mt-3 mt-md-0">
+    <div style="max-width: 250px; margin: 0 auto;">
         {% include figure.liquid loading="eager" path="/assets/img/flickerDetector/flickerDetector1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             My breadboard circuit with alligator clips supplying power.
@@ -55,7 +55,7 @@ Based on the estimated specifications above, I set out to design a transimpedanc
 
 ### Photodiode: BPW34
 
-<div class="row mt-3 mb-3 col-sm-3 mx-auto">
+<div style="max-width: 250px; margin: 0 auto;">
     {% include figure.liquid loading="eager" path="/assets/img/flickerDetector/BPW34_sml.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
     <div class="caption">
         source: DigiKey
@@ -66,7 +66,7 @@ I selected the BPW34 photodiode as the sensor for this circuit because it was re
 
 ### Op-amp: MCP602
 
-<div class="row mt-3 mb-3 col-sm-3 mx-auto">
+<div style="max-width: 250px; margin: 0 auto;">
     {% include figure.liquid loading="eager" path="/assets/img/flickerDetector/MCP602.webp" class="img-fluid rounded z-depth-1" zoomable=true %}
     <div class="caption">
         source: DigiKey
@@ -95,7 +95,7 @@ I used a C0G-type capacitor for C1 because my goal was to keep its capacitance c
 
 I followed the datasheet's test circuit to determine the values of the bypass and bulk capacitors, which are used for filtering noise. I used an X7R-type ceramic for the bypass capacitor because my understanding was that the consistency of the capacitance value is not important in that application. A tantalum capacitor was used for the bulk capacitor because it was less expensive than ceramic and it appeared other designers use tantalum-type in bulk capacitor contexts.
 
-<div class="row mt-3 mb-3 col-sm-6 mx-auto">
+<div style="max-width: 450px; margin: 0 auto;">
     {% include figure.liquid loading="eager" path="/assets/img/flickerDetector/mcp602_testcircuit.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     <div class="caption">
         MCP602 Datasheet, Figure 1.3. Highlighted are the bypass (0.1μF) and bulk (1μF) capacitors that were carried over to my circuit.
@@ -172,7 +172,7 @@ When I ran this test, I didn't know if my flashlight used PWM to _fake_ a lower 
 
 ## Incandescent Bulb
 
-<div class="row mt-3 mb-3 col-sm-6 mx-auto">
+<div style="max-width: 350px; margin: 0 auto;">
     {% include figure.liquid loading="eager" path="/assets/img/flickerDetector/flickerDetector8.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     <div class="caption">
         Light intensity waveform of the incandescent bulb
@@ -183,7 +183,7 @@ The incandescent bulb's intensity appeared to be a triangle wave, which made sen
 
 ## GreatValue LED Bulb
 
-<div class="row mt-3 mb-3 col-sm-6 mx-auto">
+<div style="max-width: 350px; margin: 0 auto;">
     {% include figure.liquid loading="eager" path="/assets/img/flickerDetector/flickerDetector9.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     <div class="caption">
         Light intensity waveform of the GreatValue LED bulb
@@ -199,13 +199,13 @@ The flicker range appeared intense, as in, the flicker made up a significant per
 I originally bought a set of these bulbs as low-flicker lighting for my living area. This was the real test for my circuit because the waveform of this bulb was already known. Let's compare the graph from Optimize Your Biology (which even had units!) to my experimental waveform of this bulb.
 
 <div class="row mt-3">
-    <div class="col-sm-5 mt-3 mt-md-0">
+    <div style="max-width: 300px; margin: 0 auto;">
         {% include figure.liquid loading="eager" path="/assets/img/flickerDetector/example_from_optimize_your_biology.png" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             Known flicker curve from Optimize Your Biology of the Philips Ultra Definition LED bulb
         </div>
     </div>
-    <div class="col-sm-7 mt-3 mt-md-0">
+    <div style="max-width: 400px; margin: 0 auto;">
         {% include figure.liquid loading="eager" path="/assets/img/flickerDetector/flickerDetector10.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
         <div class="caption">
             My light intensity waveform of the Philips Ultra Definition LED bulb
