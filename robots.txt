@@ -1,4 +1,42 @@
+
+
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: Meta-ExternalAgent
+User-agent: FacebookBot
+User-agent: DeepSeekBot
+User-agent: MistralAI-Training
+User-agent: cohere-training-data-crawler
+User-agent: PetalBot
+User-agent: Timpibot
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+
+Disallow: /
+
+
+User-agent: Claude-SearchBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: YouBot
+User-agent: ExaSearchBot
+User-agent: meta-webindexer
+Disallow: /
+Allow: /blog/2025/dell1100win11/
+Allow: /blog/2025/airPurifier/
+
+
+
 User-agent: *
 Disallow: /
+Allow: /blog/2025/dell1100win11/
+Allow: /blog/2025/airPurifier/
+
 
 Sitemap: https://rinehartj.github.io/sitemap.xml
