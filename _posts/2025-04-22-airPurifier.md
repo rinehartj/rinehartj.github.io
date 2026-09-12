@@ -16,9 +16,7 @@ Tools I needed: 6x flat-head (common) screwdrivers or butter knives, pressurized
 </div>
 
 1. I removed the filter from the bottom of the unit and turned it upside down to access the screws underneath.
-
 2. I unscrewed the 6x phillips screws and set them aside.
-
 3. I released the 6x plastic tabs that hold the unit together. This can be accomplished with flat-head (common) screwdrivers or butter knives as seen in the following picture.
 
 <div class="mt-3 mb-3 col-sm-6 mx-auto">
@@ -26,16 +24,16 @@ Tools I needed: 6x flat-head (common) screwdrivers or butter knives, pressurized
 </div>
 
 4. With all of the prying devices in place, I pulled up on the plastic to release them. Behold, the unit comes apart and the PM count sensor becomes visible.
-
 5. I unplugged the connector (which I know to be JST-GH from my drone project) from the laser PM count sensor.
+{: .any-class start="4"}
 
 <div class="mt-3 mb-3 col-sm-6 mx-auto">
     {% include figure.liquid loading="eager" path="assets/img/airPurifier/airPurifier_laserbox.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
 6. I cleaned the fan and wire mesh from any dust covering the sensor using compressed air.
-
 7. I replaced the sensor (as seen below) and reassembled the unit. Make sure to clean the air filter!
+{: .any-class start="6"}
 
 <div class="mt-3 mb-3 col-sm-6 mx-auto">
     {% include figure.liquid loading="eager" path="assets/img/airPurifier/airPurifier_laserbox_2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
