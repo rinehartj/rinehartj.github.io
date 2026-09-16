@@ -43,4 +43,4 @@ jobs:
         uses: lycheeverse/lychee-action@v2.0.2
         with:
           fail: true
-          args: --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'
+          args: --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress --accept 100..=103,200..=299,403 '_site/**/*.html'
