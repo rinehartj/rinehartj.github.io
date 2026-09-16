@@ -8,12 +8,12 @@ Failed to setup the bundle: Command failed: gem install ruby-lsp --env-shebang E
 
 Reopen in container **without** cache in VSCode if the container hangs. Also, it might just take a few rebuilds to get it to proceed past "Starting container" or similar hang.
 
-Moved posts, projects, _3dportfolio pages, assets, _bibliography/papers.bib, _data, _pages, bin/process-images.sh, 3d_portfilio.md
+Moved posts, projects, \_3dportfolio pages, assets, \_bibliography/papers.bib, \_data, \_pages, bin/process-images.sh, 3d_portfilio.md
 
-Moved _layouts/3d_model.liquid
-Moved _includes/3d_portfolio.liquid
+Moved \_layouts/3d_model.liquid
+Moved \_includes/3d_portfolio.liquid
 
-Carried over values from _config.yml
+Carried over values from \_config.yml
 
 Removed archive-3dtag.liquid which seemed to do nothing anyways; it looks like jekyll-archives is using its own page liquid file.
 
