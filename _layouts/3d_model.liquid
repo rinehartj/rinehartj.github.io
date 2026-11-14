@@ -22,6 +22,18 @@ layout: default
           ar-modes="webxr scene-viewer quick-look"
           environment-image="neutral"
           disable-zoom
+          {% if page.camera_orbit %}
+            camera-orbit="{{ page.camera_orbit }}"
+          {% endif %}
+          {% if page.camera_target %}
+            camera-target="{{ page.camera_target }}"
+          {% endif %}
+          {% if page.field_of_view %}
+            field-of-view="{{ page.field_of_view }}"
+          {% endif %}
+          {% if page.exposure %}
+            exposure="{{ page.exposure }}"
+          {% endif %}
         >
           <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
